@@ -38,4 +38,9 @@ for ( var i = 0; i < 9; i++) {
     saveBtn[i].addEventListener("click",function(){
         alert("Your event has been successfully saved!"); 
     })
+
+    // create a function that removes current task 
+    function removeCurrentTask(id){
+        document.getElementById(id).value = "";
+    }
 }
