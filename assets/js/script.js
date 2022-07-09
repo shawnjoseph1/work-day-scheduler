@@ -32,7 +32,7 @@ for ( var i = 0; i < 9; i++) {
   }
 
   saveBtn[i].addEventListener("click",function(){; // save button event listener  
-    var id = this.getAttribute("data-id");  // get data-id attribute from save button 
+    var id = this.getAttribute("id");  // get data-id attribute from save button 
     var text = document.getElementById(id).value; // get value from textarea
      localStorage.setItem(id,text); // save data to local storage 
 })
