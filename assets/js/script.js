@@ -26,18 +26,18 @@ for ( var i = 0; i < 9; i++) {
         break; 
  }
 
-   // save data to local storage
+   
   if(localStorage.getItem(i)){
-      document.getElementById(i).value = localStorage.getItem(i); // displays saved data from local storage 
+      document.getElementById(i).value = localStorage.getItem(i); // displays saved data from local storage  
   }
 
-  saveBtn[i].addEventListener("click",function(){; // save button event listener 
-    var id = this.getAttribute("data-id");  // get data-id attribute from save button
+  saveBtn[i].addEventListener("click",function(){; // save button event listener  
+    var id = this.getAttribute("data-id");  // get data-id attribute from save button 
     var text = document.getElementById(id).value; // get value from textarea
      localStorage.setItem(id,text); // save data to local storage 
 })
 
-// An alert that displays when the user saves an event
+// An alert that displays when the user saves an event to indicate that the event has been saved
     saveBtn[i].addEventListener("click",function(){
         alert("Your event has been successfully saved!"); 
     })
