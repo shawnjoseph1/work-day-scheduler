@@ -58,6 +58,7 @@ textarea{
   color: white;
 }
 
+/* added display flex so the save buttons can all be aligned */
 .saveBtn {
   display: flex;
   border-left: 1px solid black;
